@@ -68,7 +68,7 @@ data = [
 
 df = spark.createDataFrame(data, schema)
 
-df = df.repartition(100)
+df = df.repartition(20)
 
 df.cache()
 
